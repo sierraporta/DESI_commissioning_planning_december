@@ -1,4 +1,4 @@
-### Methodology for calculating effective exposure times for observation.   
+### Methodology to calculate effective exposure time for DESI observation.   
 
 A script and a notebook are available to do the calculation in two steps.  
 
