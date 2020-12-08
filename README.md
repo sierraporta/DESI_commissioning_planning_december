@@ -1,5 +1,4 @@
-# DESI_commissioning_planning_december
-### Description of methodology for calculating effective exposure times for observation.   
+### Methodology for calculating effective exposure times for observation.   
 
 A script and a notebook are available to do the calculation in two steps.  
 
