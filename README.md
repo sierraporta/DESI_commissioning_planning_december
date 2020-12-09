@@ -32,7 +32,7 @@ Using the TRANSP and FRACFLUX values from the results of the first script. Final
 
 It just runs doing:
 
-> python depth_calculation.py
+> python depth_calculation.py sv0
 
 This action generate the file "__desi_sv0_exposures_gfa_with_depth.fits__" and looks like as
 
