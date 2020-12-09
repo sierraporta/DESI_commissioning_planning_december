@@ -13,9 +13,9 @@ To run this script we do (for SV0):
 
 > python desi_exposures_gfa.py sv0
 
-This action generate the file ""
+This action generate the file "desi_sv0_exposures_gfa.fits".
 
-**STEP 2**: The second script called "depth_calculation.ipynb" does the following (also based on D.Kirkby's calculation):      
+**STEP 2**: The second script called "depth_calculation.py" take the output generate for the fist script and does the following (also based on D.Kirkby's calculation):      
 
 1. Read the spectra of each tile and exposure and divide into bands b, r and z for each one.     
 2. Read the DESIMODEL yields for each spectrograph from a local copy obtained using a console command:        
@@ -29,3 +29,9 @@ This action generate the file ""
 DEPTH=EXPTIME x (TRANSP/1.0)^2 x (FRACFLUX/0.56)^2 x (FIDSKY/EXPSKY)
 
 Using the TRANSP and FRACFLUX values from the results of the first script. Finally, these values are added to the first .fits generated with the first script.
+
+It just runs doing:
+
+> python depth_calculation.py
+
+This action generate the file "desi_sv0_exposures_gfa_with_depth.fits".
