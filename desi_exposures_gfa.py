@@ -8,7 +8,7 @@ import glob
 
 campaign = sys.argv[1] # minisv2 or sv0
 
-outfits= '/global/cscratch1/sd/dsporta/comissioning_planning_dec/desi_'+campaign+'_exposures_gfa.fits'
+outfits= './desi_'+campaign+'_exposures_gfa.fits'
 expdir = '/global/cfs/cdirs/desi/spectro/redux/daily/exposures/'
 
 if (campaign=='minisv2'):
@@ -16,6 +16,7 @@ if (campaign=='minisv2'):
 	pid   = 'b0'
 	# https://desi.lbl.gov/trac/wiki/TargetSelectionWG/miniSV2
 	tiles = [70002,70003,70004,70005,70006,70500,70502,70506,70508,70510,70511,70512,70513,70514]
+	gfafn = '/global/cfs/cdirs/desi/users/ameisner/GFA/conditions/offline_all_guide_ccds_minisv2.fits'
 	# listing all exposures (19 feb to 04 mar 2020, included)
 	nights = []
 	nights+= [fn.split('/')[-1] for fn in glob.glob(expdir+'202002??') if int(fn.split('/')[-1][-2:])>=19]
