@@ -34,4 +34,5 @@ It just runs doing:
 
 > python depth_calculation.py
 
-This action generate the file "desi_sv0_exposures_gfa_with_depth.fits".
+This action generate the file "desi_sv0_exposures_gfa_with_depth.fits" and looks like as
+
