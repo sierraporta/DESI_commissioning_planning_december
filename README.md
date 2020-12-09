@@ -26,7 +26,7 @@ This action generate the file "desi_sv0_exposures_gfa.fits".
 - FIDSKY is the fiducial sky "dark zenith" with 100A smoothing     
 7. For each tile and each exposure and in each band (brz), then it is calculated:
 
-                              DEPTH = EXPTIME x (TRANSP/1.0)^2 x (FRACFLUX/0.56)^2 x (FIDSKY/EXPSKY)
+                     DEPTH = EXPTIME x (TRANSP/1.0)^2 x (FRACFLUX/0.56)^2 x (FIDSKY/EXPSKY)
 
 Using the TRANSP and FRACFLUX values from the results of the first script. Finally, these values are added to the first .fits generated with the first script.
 
