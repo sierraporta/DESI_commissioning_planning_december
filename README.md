@@ -36,3 +36,4 @@ It just runs doing:
 
 This action generate the file "desi_sv0_exposures_gfa_with_depth.fits" and looks like as
 
+![](Screenshot_file.png)
