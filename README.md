@@ -13,6 +13,8 @@ To run this script we do (for SV0):
 
 > python desi_exposures_gfa.py sv0
 
+This action generate the file ""
+
 **STEP 2**: The second script called "depth_calculation.ipynb" does the following (also based on D.Kirkby's calculation):      
 
 1. Read the spectra of each tile and exposure and divide into bands b, r and z for each one.     
