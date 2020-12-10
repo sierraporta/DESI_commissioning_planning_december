@@ -6,7 +6,7 @@ The computation is done in two steps.
 
 **First Step**
 
-Run `python desi_exposures_gfa.py sv0` (or `python desi_exposures_gfa.py minisv2`) to read the GFA images and build summary table with the following columns 
+Run `python desi_exposures_gfa.py sv0` (or `python desi_exposures_gfa.py minisv2`) to read the GFA images and build a summary table with the following columns 
 
 `'expid'
 'night'
