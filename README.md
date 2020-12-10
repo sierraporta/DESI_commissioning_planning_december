@@ -6,13 +6,36 @@ The computation is done in two steps.
 
 **First Step*
 
-Use the script `desi_exposures_gfa.py` (`python desi_exposures_gfa.py sv0`, or `python desi_exposures_gfa.py minisv2`) to read the GFA images and build summary table for each exposure that contains:
+Use the script `desi_exposures_gfa.py` (`python desi_exposures_gfa.py sv0`, or `python desi_exposures_gfa.py minisv2`) to read the GFA images and build summary table with the following columns 
 
-[`expid`, `night`, `tileid`, `exptime`, `mjdobs`, `tilera`, `tiledec`, `ngfa`, `ebv`].
-
-
-
-
+`'expid'
+'night'
+'tileid'
+'exptime'
+'mjdobs'
+'tilera'
+'tiledec'
+'airmass_min'
+'airmass_med'
+'airmass_max'
+'moon_sep_deg_min'
+'moon_sep_deg_med'
+'moon_sep_deg_max'
+'transparency_min'
+'transparency_med'
+'transparency_max'
+'fwhm_asec_min'
+'fwhm_asec_med'
+'fwhm_asec_max'
+'sky_mag_ab_min'
+'sky_mag_ab_med'
+'sky_mag_ab_max'
+'fiber_fracflux_min'
+'fiber_fracflux_med'
+'fiber_fracflux_max'
+'ngfa'
+'ebv'`
+                       
 **STEP 1**: The first script called "__desi_exposures_gfa.py__" is an original script by D.Kirkby used for SV0 and miniSV2. The main objective of this script is to take the outputs of the GFA condition observation for day and build a summary table that essentially contains minimum, maximum and median values, respectively:  
 ['airmass', 'moon_sep_deg', 'transparency', 'fwhm_asec', 'sky_mag_ab', 'fiber_fracflux']  
 as well as information on each tile and exposition_ID:  
