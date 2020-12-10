@@ -4,7 +4,7 @@ This repository contains scripts and files provided by D. Kirkby to compute the 
 
 The computation is done in two steps.
 
-**First Step*
+**First Step**
 
 Run `python desi_exposures_gfa.py sv0` (or `python desi_exposures_gfa.py minisv2`) to read the GFA images and build summary table with the following columns 
 
